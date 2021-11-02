@@ -9,14 +9,14 @@ class Image
     private Imagick $imagick;
     private string $name;
 
-    public function __construct(string $fileName, $config)
+    public function __construct(string $imagePath, $config)
     {
-        $this->imagick = new Imagick($fileName);
-        $imageName = str_replace("$config->imageDirectoryPath/",'',$fileName);
+        $this->imagick = new Imagick($imagePath);
+        $imageName = str_replace("$config->imageDirectoryPath/",'',$imagePath);
         $this->name = str_replace(".$config->imagesFormat",'',$imageName);
     }
 
-    public function getImagick(): Imagick
+    public function Imagick(): Imagick
     {
         return $this->imagick;
     }

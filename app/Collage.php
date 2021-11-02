@@ -18,7 +18,7 @@ class Collage
             /** @var Imagick $img */
             foreach( $images as $image)
             {
-                $img = $image->getImagick();
+                $img = $image->Imagick();
                 $img->borderImage($config->imageBorderColor,$config->imageBorderMargin/2,$config->imageBorderMargin);
                 $img->resizeImage(362,544,imagick::FILTER_UNDEFINED, 1);
                 $row->addImage($img);
