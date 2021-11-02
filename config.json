@@ -1,0 +1,12 @@
+{
+  "imageDirectoryName" : "assets",
+  "imagesFormat" : "png",
+  "imageBorderMargin" : 5 ,
+  "imageBorderColor" : "white",
+  "backgroundColor" : "transparent",
+  "columns" : 5,
+  "rows" : 2,
+  "collageName" : "collage",
+  "collageFormat" : "png"
+
+}
