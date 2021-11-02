@@ -20,7 +20,7 @@ class Image
     {
         return $this->imagick;
     }
-    public function name()
+    public function name() :string
     {
         return $this->name;
     }

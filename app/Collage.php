@@ -7,7 +7,7 @@ use Imagick;
 
 class Collage
 {
-    public static function make(\stdClass $config , ImagesCollection $collection)
+    public static function make(\stdClass $config , ImagesCollection $collection) :void
     {
         $rowImages = new Imagick();
 
