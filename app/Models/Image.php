@@ -12,7 +12,7 @@ class Image
     public function __construct(string $fileName, $config)
     {
         $this->imagick = new Imagick($fileName);
-        $imageName = str_replace("$config->imageDirectoryName/",'',$fileName);
+        $imageName = str_replace("$config->imageDirectoryPath/",'',$fileName);
         $this->name = str_replace(".$config->imagesFormat",'',$imageName);
     }
 

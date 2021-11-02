@@ -2,14 +2,13 @@
 
 namespace App\Models;
 
-use Imagick;
 
 class ImagesCollection
 {
     private array $imageCollection = [];
     public function __construct(\stdClass $config)
     {
-        $imageList = glob("$config->imageDirectoryName/*");
+        $imageList = glob("$config->imageDirectoryPath/*");
         foreach ($imageList as $imagePath)
         {
             $img = new Image($imagePath, $config);

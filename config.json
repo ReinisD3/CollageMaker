@@ -1,7 +1,7 @@
 {
-  "imageDirectoryName" : "assets",
+  "imageDirectoryPath" : "assets",
   "imagesFormat" : "png",
-  "imageBorderMargin" : 5 ,
+  "imageBorderMargin" : 10 ,
   "imageBorderColor" : "white",
   "backgroundColor" : "transparent",
   "columns" : 5,
